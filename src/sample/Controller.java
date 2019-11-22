@@ -44,11 +44,8 @@ public class Controller {
     }
 
     public void cargarGrilla(){
-        TableColumn col1 = new TableColumn("Nombre");try{
+        TableColumn col1 = new TableColumn("Nombre");
 
-        }catch (Exception ex){
-            System.out.println("El precio debe ser un numero");
-        }
         col1.setCellValueFactory(new PropertyValueFactory<>("Nombre"));
         TableColumn col2 = new TableColumn("Domicilio");
         col2.setCellValueFactory(new PropertyValueFactory<>("Domicilio"));
